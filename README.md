@@ -42,24 +42,54 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+chanchal singavi
+c k sukula
+s.n. gupta
+sumit chakrobarty
 
 
 cat < file2
 ## OUTPUT
-
+anil aggarwal
+barun sengupta
+c.k. sukula
+lalit chowdary
+s.n. das gupta
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+file1 file2 differ: char 1, line 1
+
+
 comm file1 file2
  ## OUTPUT
+ anil aggarwal
+        barun sengupta
+        c.k. sukula
+chanchal singavi
+c k sukula
+        lalit chowdary
+        s.n. das gupta
+s.n. gupta
+sumit chakrobarty
+ 
 
  
 diff file1 file2
 ## OUTPUT
-
+--- file1
++++ file2
+@@ -1,4 +1,5 @@
+-chanchal singavi
+-c k sukula
+-s.n. gupta
+-sumit chakrobarty
++anil aggarwal
++barun sengupta
++c.k. sukula
++lalit chowdary
++s.n. das gupta
 
 #Filters
 
